@@ -1,0 +1,64 @@
+:root{
+    font-family: 'roboto', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+}
+
+.left{
+    display: grid;
+}
+
+.right{
+    display: grid;
+
+}
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.introduction-text{
+    display: flex;
+}
+
+h2{
+    font-size: 1.8rem;
+    width: clamp(55ch, 50%, 65ch)
+}
+
+input, label{
+    display: block;
+}
+
+fieldset{
+    justify-content: center;
+}
+
+legend{
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 2rem 0px;
+
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    gap: 1rem 1rem
+}
+
+.already{
+    display: block;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS styles-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap" rel="stylesheet"> 
+    
+    <!--Default HTML-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+</head>
+<body class="container">
+    <header class="left">
+        <h1>Lazing Bird</h1>
+    </header>
+    <main class="right">
+        <div class="introduction">
+            <h2>I'm not really a bird. To be honest, I don't even know what's a lazing bird. So... just appreciate this cute bird on the side of page</h2>
+            <h2>Look at him! So cute</h2>
+        </div>
+        <div class="form-container">
+            <form action="/create-account" method="POST">
+                <fieldset>
+                    <legend>Sign for more birb photos</legend>
+                    <ul>
+                        <li>
+                            <label for="name">
+                                FIRST NAME
+                            </label>
+                            <input type="text" name="username" id="name">
+                        </li>
+                        <li>
+                            <label for="lastname">
+                                LAST NAME
+                            </label>
+                            <input type="text" name="userlastname" id="lastname">
+                        </li>
+                        <li>
+                            <label for="mail">
+                                EMAIL
+                            </label>
+                            <input type="email" name="usermail" id="mail">
+                        </li>
+                        <li>
+                            <label for="phone">
+                                PHONE NUMBER
+                            </label>
+                            <input type="tel" name="userphone" id="phone">
+                        </li>
+                        <li>
+                            <label for="pw">
+                                PASSWORD
+                            </label>
+                            <input type="password" name="userpw" id="pw">
+                        </li>
+                        <li>
+                            <label for="confirmpw">
+                                CONFIRM PASSWORD
+                            </label>
+                            <input type="password" name="userpw" id="confirmpw">
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Create Account</button>
+            </form>
+            <span class="already">Already have an account?<a href="/log-in">Log in</a></span> 
+        </div>
+    </main>
+</body>
+</html>
