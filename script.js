@@ -1,3 +1,7 @@
+function playMusic(){
+    music = document.getElementById("music")
+    music.play()
+}
 
 function checkPass(form){
     password = form.pw.value;

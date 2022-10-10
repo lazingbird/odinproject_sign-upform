@@ -35,6 +35,8 @@ p{
     width: 40vw;
 }
 
+
+
 #logo-container{
     margin-top: 8rem;
     background-color: rgb(48, 26, 26);
@@ -44,10 +46,25 @@ p{
     text-align: center;
 }
 
+#logo-container:hover{
+    cursor: pointer;
+}
+
 #logo{
     font-family: 'Cairo Play', cursive;
     font-size: 2rem;
     color: white;
+    position: relative;
+}
+
+#logo::after{
+    content: "DO NOT CLICK BELOW ME";
+    font-size: 0.9rem;
+    position: absolute;
+    color: rgb(180, 16, 16);
+    top: -30px;
+    width: 200px;
+    left: 60px
 }
 
 .right{
@@ -108,12 +125,6 @@ input{
     background-color: rgb(58, 58, 58);
 
 
-}
-
-embed{
-    width: 0;
-    height: 0;
-    position: absolute;
 }
 
 
