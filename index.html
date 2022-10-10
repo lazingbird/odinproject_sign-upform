@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <!-- CSS styles-->
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript-->
+    <script src="./script.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,62 +18,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
 </head>
-<body class="container">
-    <header class="left">
-        <h1>Lazing Bird</h1>
-    </header>
-    <main class="right">
-        <div class="introduction">
-            <h2>I'm not really a bird. To be honest, I don't even know what's a lazing bird. So... just appreciate this cute bird on the side of page</h2>
-            <h2>Look at him! So cute</h2>
-        </div>
-        <div class="form-container">
-            <form action="/create-account" method="POST">
-                <fieldset>
-                    <legend>Sign for more birb photos</legend>
+<body>
+    <div class="container">
+        <header class="left">
+            <div id="logo-container">
+                <h1 id="logo">Lazing Bird</h1>
+            </div>
+            <p class="source">Photo by <a class="sourceLink" href="https://unsplash.com/photos/g3HplRqNifo">Marek Piwnicki</a></p>
+        </header>
+        <main class="right">
+            <div class="introduction">
+                <div class="introduction-text">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut dignissim dolor, ac pellentesque felis. Integer neque dolor, ultrices at consectetur sit amet, elementum ut velit.</h2>
+        
+                </div>
+            </div>
+            <div class="form-container">
+                <form onsubmit="return checkPass(this)" action="#">
+                    <h2 class="form-title">Sign-in for more lorem ipsum</h2>
                     <ul>
                         <li>
-                            <label for="name">
+                            <label for="name" >
                                 FIRST NAME
                             </label>
-                            <input type="text" name="username" id="name">
+                            <input type="text" name="username" id="name" placeholder="What's your name?"required>
                         </li>
                         <li>
                             <label for="lastname">
                                 LAST NAME
                             </label>
-                            <input type="text" name="userlastname" id="lastname">
+                            <input type="text" name="userlastname" id="lastname" placeholder="What's your last name?" required>
                         </li>
                         <li>
-                            <label for="mail">
+                            <label for="mail" required>
                                 EMAIL
                             </label>
-                            <input type="email" name="usermail" id="mail">
+                            <input type="email" name="usermail" id="mail" placeholder="you@example.com"  required>
                         </li>
                         <li>
                             <label for="phone">
                                 PHONE NUMBER
                             </label>
-                            <input type="tel" name="userphone" id="phone">
+                            <input type="tel" name="userphone" id="phone" placeholder="123-45-678" required>
                         </li>
                         <li>
                             <label for="pw">
                                 PASSWORD
                             </label>
-                            <input type="password" name="userpw" id="pw">
+                            <input type="password" name="userpw" id="pw" placeholder="Shh.. don't tell anyone" required>
                         </li>
                         <li>
-                            <label for="confirmpw">
+                            <label for="confirmPw">
                                 CONFIRM PASSWORD
                             </label>
-                            <input type="password" name="userpw" id="confirmpw">
+                            <input type="password" name="userpw" id="confirmPw" placeholder="..or tell. Choice is yours" required>
                         </li>
                     </ul>
-                </fieldset>
-                <button type="submit">Create Account</button>
-            </form>
-            <span class="already">Already have an account?<a href="/log-in">Log in</a></span> 
-        </div>
-    </main>
+                    <button id="submit-btn" type="submit">Create Account</button>
+                    <div class="already">Already have an account? <a href="/log-in">Log in</a></div>
+                </form>
+            </div>
+            <p class="source2">Neat CRT effect by <a class="sourceLink2" href="http://aleclownes.com/2017/02/01/crt-display.html">Alec Lownes</a></p>
+        </main>
+    </div>
+    <embed src="./Resources/Audio/sound.wav" autostart loop="true">
 </body>
 </html>

@@ -2,63 +2,226 @@
     font-family: 'roboto', sans-serif;
 }
 
-html, body{
-    width: 100%;
-    height: 100%;
+html,
+body{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+h1,
+h2,
+h3,
+h4,
+p{
+    margin: 0;
+    padding: 0;
 }
 
 .container{
-    display: grid;
-    grid-template-columns: 0.4fr 0.6fr;
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+
 }
 
 .left{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./Resources/Images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    width: 40vw;
+}
+
+#logo-container{
+    margin-top: 8rem;
+    background-color: rgb(48, 26, 26);
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    width: 20rem;
+    text-align: center;
+}
+
+#logo{
+    font-family: 'Cairo Play', cursive;
+    font-size: 2rem;
+    color: white;
 }
 
 .right{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 15, 15);
+    width: 60vw;
 
 }
 
 .introduction{
     display: flex;
-    flex-direction: column;
+    height: 30%;
+    width: 0.6fr;
+    padding: 2rem 5rem;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
 }
 
 .introduction-text{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.form-container{
+    overflow:visible;
+    padding: 2rem 5rem;
+    background-color: rgb(8, 8, 8);
+    height: 45%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.form-title{
+    font-family: 'Cairo Play', cursive;
+    color: white;
+    font-size: 2rem;
+}
+
+form{
+    height: 10px;
+}
+
+label{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+input{
     display: flex;
+    color: white;
+    flex-flow: column wrap;
+    width: 250px;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(58, 58, 58);
+
+
 }
 
-h2{
-    font-size: 1.8rem;
-    width: clamp(55ch, 50%, 65ch)
+embed{
+    width: 0;
+    height: 0;
+    position: absolute;
 }
 
-input, label{
-    display: block;
-}
 
-fieldset{
-    justify-content: center;
-}
-
-legend{
-    font-size: 1.8rem;
-    font-weight: 800;
-    padding: 2rem 0px;
-
+input:hover{
+    border: 1px solid white;
 }
 
 ul{
+    margin: 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 600px;
-    gap: 1rem 1rem
+    grid-template-columns: 45% 45%;
+    list-style: none;
+
 }
 
+li{
+    margin-top: 20px;
+}
+button{
+    background-color: rgb(236, 11, 11);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 900;
+    padding: 1rem 2rem;
+    margin-top: 5%;
+    border-style: none;
+    border-radius: 8px;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+}
 .already{
+    margin-left: 0.5rem;
+    display: inline-block;
+    color: white;
+
+}
+
+.container::before {
+    content: " ";
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+
+}
+
+.sourceLink{
+    color: black;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.source2{
+    color: white;
+    text-align: right;
+    vertical-align: bottom;
+    margin-right: 50px;
+}
+
+.sourceLink2{
+    color: red;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 30px;
+    bottom: 0;
+}
+  
+.already a{
+    text-decoration: none;
+    color: red;
+    font-weight: 1000;
+}
+
+@media (max-height: 900px){
+    .form-title{
+        font-size: 1.5;
+    }
+
+    input{
+        height: 50%;
+        width: 70%;
+    }
+
+    button{
+        font-size: 1rem;
+        font-weight: 900;
+        padding: 0.5rem 2rem;
+    }
+
+    label{
+        font-size: 0.75rem;
+    }
+
+}
+
+@media (max-width: 1400px){
+    input{
+        width: 180px;
+    }
 }
