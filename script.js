@@ -1,3 +1,5 @@
+const logo = document.querySelector("#logo-container")
+
 function playMusic(){
     music = document.getElementById("music")
     music.play()
@@ -12,3 +14,5 @@ function checkPass(form){
     }
 
 }
+
+logo.addEventListener("click", playMusic)

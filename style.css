@@ -58,7 +58,7 @@ p{
 }
 
 #logo::after{
-    content: "DO NOT CLICK BELOW ME";
+    content: "DO NOT CLICK IN OR BELOW ME";
     font-size: 0.9rem;
     position: absolute;
     color: rgb(180, 16, 16);
