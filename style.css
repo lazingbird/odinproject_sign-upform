@@ -28,7 +28,7 @@ p{
 .left{
     display: flex;
     flex-direction: column;
-    background-image: url(./Resources/Images/background.jpg);
+    background-image: url(./resources/Images/background.jpg);
     background-size: cover;
     background-position: center;
     align-items: center;
