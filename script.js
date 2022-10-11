@@ -1,9 +1,7 @@
 const logo = document.querySelector("#logo-container")
-const music = document.getElementById("music")
 
 function playMusic(){
-    const music = document.getElementById("music")
-    music.play()
+    backgroundSound.play()
 }
 
 function checkPass(form){
