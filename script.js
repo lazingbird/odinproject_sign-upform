@@ -1,7 +1,8 @@
 const logo = document.querySelector("#logo-container")
+const music = document.getElementById("music")
 
 function playMusic(){
-    music = document.getElementById("music")
+    const music = document.getElementById("music")
     music.play()
 }
 
